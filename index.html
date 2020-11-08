@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climatizzar - Climatizadores</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="topo">
+        <div class="center">
+            <header>
+                <div class="logo"><img src="img/Climatizzar.png" alt=""></div>
+            </header>
+            <ul class="menu-desktop">
+                <li><a href="">Home</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <div class="clear"></div>
+            
+        </div><!--center-->
+        <div class=" clima-imagem">
+            <img src="img/climabrisa_cabine.jpg" alt="">
+        </div><!--clima-imagem-->
+    </section><!-- topo -->
+    <section class="center climatizacao">
+        <div class="w50">
+            <h2>O que é a climatização evaporativa?</h2>
+            <p>No resfriamento evaporativo o ar cede energia (calor) para que a água evapore, resultando na liberação de uma corrente de ar mais fria.</p>
+        </div>
+        <div class="w50">
+            <img src="img/climatizador.png" alt="">
+        </div>
+    </section>
+    <div class="clear"></div>
+    <div class="evaporacao">
+        <h2>Benefícios da climatização evaporativa</h2>
+        <div class="esquerda">
+            <ul class="lista-esquerda center">
+                <li><p>Umidificação do ar</p></li>
+                <li><p>Ventilação do ar</p></li>
+                <li><p>Renovação do ar</p></li>
+                <li><p>Não utiliza gases tóxicos</p></li>
+                <li><p>Baixo consumo de energia elétrica</p></li>
+            </ul>
+        </div>
+        <div class="direita">
+            <ul class="lista-direita center">
+                <li><p>Baixos níveis de ruídos</p></li>
+                <li><p>Baixo custo de instalação</p></li>
+                <li><p>Baixo custo de manutenção</p></li>
+                <li><p>Fácil instalação</p></li>
+                <li><p>Reduz a temperatura em até 12º C</p></li>
+            </ul>
+        </div>
+    </div><!--Evaporacao-->
+    <div class="clear"></div><!--clear-->
+    <section class="clientes-slider">
+        <div class="center">
+            <h2>Nossos clientes</h2>
+            <div style="max-width: 700px;margin: 0 auto;overflow: hidden;" class="slider-container">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="call-to-action">
+        <h2>Precisa de mais informações?</h2>
+        <a class="" href="#">Entrar em contato</a>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('section.clientes-slider .slider-container').slick({
+            dots: true,
+            arrows: false,
+            infinite: false,
+            speed: 1000,
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive:[{
+                breakpoint: 768,
+                settings:{
+                    slidesToShow: 2
+                }
+            }]
+        });
+    </script>
+</body>
+</html>
