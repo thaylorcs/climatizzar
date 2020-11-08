@@ -34,7 +34,15 @@ section.topo{
     top: -15px;
 }
 
-.menu-desktop{float: right;}
+.logo img{
+    max-width: 170px;
+}
+
+.menu-desktop{
+    float: right;
+    position: relative;
+    top: -7px;
+}
 
 .menu-desktop li{
     display: inline-block;
@@ -47,10 +55,14 @@ section.topo{
 }
 
 .clima-imagem {
-    /* max-width: 100%; */
+    max-width: 100%;
     text-align: center;
     display: block;
     background: #e6e6e6;
+}
+
+.clima-imagem img{
+    height: 85vh;
 }
 
 .climatizacao h2{
@@ -59,8 +71,8 @@ section.topo{
 }
 
 .climatizacao p {
-    margin-top: 20px;
-    font-size: 30px;
+    margin: 30px 0;
+    font-size: 24px;
 }
 
 .climatizacao img{
@@ -83,22 +95,20 @@ div.evaporacao h2{
     padding-top: 20px;
 }
 
-.evaporacao ul{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 220px;
-    padding-bottom: 30px
-}
-
 ul.lista-esquerda li,
 ul.lista-direita li{
     list-style-type: none;
-    padding: 10px 0;
+    padding: 15px 10px;
     font-size: 20px;
 }
 
 ul.lista-esquerda{
-    float: right;
+    float: left;
+    text-align: left;
+}
+
+ul.lista-direita {
+    text-align: right
 }
 
 /*Clientes*/
@@ -168,12 +178,11 @@ li.slick-active button{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     position: relative;
-    left: 42%;
+    left: 40%;
     border: 1px solid white;
     border-radius: 15px;
-    
 }
 
 .call-to-action a:hover{
@@ -186,7 +195,7 @@ li.slick-active button{
     .w50{width: 100%;}
 
     .clima-imagem img{
-        max-width: 320px;
+        width: 440px;
     }
 
     .menu-desktop{
