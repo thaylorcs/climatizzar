@@ -7,16 +7,24 @@
     font-weight: bold;
 }
 
+.navbar-brand{
+    padding-left: 10px;
+}
+
 .clima-imagem {
-    max-width: 100%;
+    /* max-width: 100%; */
     text-align: center;
-    display: block;
+    /* display: block; */
     background: #e6e6e6;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .clima-imagem img{
     height: 85vh;
+}
+
+.climatizacao {
+    padding-top: 50px;
 }
 
 .climatizacao h2{
@@ -52,7 +60,6 @@ div.evaporacao h2{
 ul.lista-esquerda li,
 ul.lista-direita li{
     list-style-type: none;
-    padding: 15px 10px;
     font-size: 20px;
 }
 
@@ -67,10 +74,10 @@ ul.lista-direita {
 
 /*Clientes*/
 .clientes-slider h2{
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     padding: 30px 0;
-
+    text-transform: uppercase;
 }
 
 .slider-container img{
@@ -79,7 +86,6 @@ ul.lista-direita {
 }
 
 /****SLICK SLIDER****/
-
 .slick-dotted ul{
 	list-style-type: none;
 	text-align: center;
@@ -113,28 +119,31 @@ li.slick-active button{
 }
 
 .slick-slide:focus { outline: none; }
-
 /**END SLICK**/
 
 .call-to-action{
-    margin-top: 20px;
     align-items: center;
     background: #00386b;
     line-height: 100px;
+    margin-top: 20px;
 }
 
 .call-to-action h2{
-    text-align: center;
     color: white;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .call-to-action a {
     background-color: red;
     border-radius: 15px;
     border: 1px solid white;
-    color: white;    
-    align-items: center;
-    padding: 15px;    
+    color: white;
+    margin-bottom: 30px;
+    padding: 15px;
+    position: relative;
+    left: 43%; 
     text-decoration: none;
     text-align: center;
 }
@@ -146,7 +155,7 @@ li.slick-active button{
 }
 
 .footer {
-    background-color: #363636;
+    background-color: #2c2727;
     color: white;
     text-align: center;
     padding: 20px;
@@ -158,20 +167,3 @@ li.slick-active button{
     text-align: center;
     padding: 20px;
 }
-
-@media screen and (max-width: 768px){
-    .w50{width: 100%;}
-
-    .clima-imagem img{
-        width: 440px;
-    }
-
-    .menu-desktop{
-        display: none;
-    }
-
-    .logo img{
-        text-align: center;
-    }
-}
-
