@@ -164,6 +164,7 @@ li.slick-active button{
 
 .call-to-action{
     margin-top: 20px;
+    align-items: center;
     background: #00386b;
     line-height: 100px;
 }
@@ -175,20 +176,33 @@ li.slick-active button{
 
 .call-to-action a {
     background-color: red;
-    color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;    
+    align-items: center;
+    padding: 15px;    
     text-decoration: none;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    left: 40%;
-    border: 1px solid white;
-    border-radius: 15px;
 }
 
 .call-to-action a:hover{
     background-color: white;
     color: red;
     font-weight: bold;
+}
+
+.footer {
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Quem somos*/
+
+.titulo {
+    text-align: center;
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px){
