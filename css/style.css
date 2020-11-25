@@ -135,23 +135,12 @@ li.slick-active button{
     text-transform: capitalize;
 }
 
-.call-to-action a {
-    background-color: red;
-    border-radius: 15px;
-    border: 1px solid white;
-    color: white;
-    margin-bottom: 30px;
-    padding: 15px;
-    position: relative;
-    left: 43%; 
-    text-decoration: none;
-    text-align: center;
+.call-to-action form {
+    padding: 20px;
 }
 
-.call-to-action a:hover{
-    background-color: white;
-    color: red;
-    font-weight: bold;
+.call-to-action textarea {
+    resize: none;
 }
 
 .footer {
