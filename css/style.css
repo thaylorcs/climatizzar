@@ -63,16 +63,11 @@ ul.lista-direita li{
     font-size: 20px;
 }
 
-ul.lista-esquerda{
-    float: left;
-    text-align: left;
-}
-
-ul.lista-direita {
-    text-align: right
-}
-
 /*Clientes*/
+.clientes-slider{
+    display: none;
+}
+
 .clientes-slider h2{
     font-size: 28px;
     text-align: center;
@@ -125,7 +120,7 @@ li.slick-active button{
     align-items: center;
     background: #00386b;
     line-height: 100px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .call-to-action h2{
