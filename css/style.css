@@ -7,16 +7,18 @@
     font-weight: bold;
 }
 
+.bg-light{
+    background-color: white!important;
+}
+
 .navbar-brand{
     padding-left: 10px;
 }
 
 .clima-imagem {
-    /* max-width: 100%; */
     text-align: center;
-    /* display: block; */
     background: #e6e6e6;
-    /* height: 90vh; */
+    height: calc(100vh - 70px);
 }
 
 .clima-imagem img{
@@ -57,10 +59,31 @@ div.evaporacao h2{
     padding-top: 20px;
 }
 
-ul.lista-esquerda li,
-ul.lista-direita li{
-    list-style-type: none;
+ul.lista{
+    display: flex;
+    flex-flow: row wrap;
     font-size: 20px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul.lista li {
+    margin-top: 20px;
+    width: 400px;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
 }
 
 /*Clientes*/
@@ -116,6 +139,24 @@ li.slick-active button{
 .slick-slide:focus { outline: none; }
 /**END SLICK**/
 
+
+/*Quem somos*/
+
+.quem-somos-titulo {
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.quem-somos-texto {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0;
+    word-spacing: 5px;
+}
+
+
+
 .call-to-action{
     align-items: center;
     background: #00386b;
@@ -140,13 +181,6 @@ li.slick-active button{
 .footer {
     background-color: #2c2727;
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/*Quem somos*/
-
-.titulo {
     text-align: center;
     padding: 20px;
 }
