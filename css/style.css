@@ -171,11 +171,19 @@ li.slick-active button{
 }
 
 .call-to-action form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
 .call-to-action textarea {
     resize: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer {
