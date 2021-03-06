@@ -100,18 +100,18 @@
             
             <div class="row">
                         
-                <form action="enviarEmail.php">
+                <form action="mail.php" method="POST">
                     <div class="form-group">
-                        <input class="form-control" type="text" id="InputName" placeholder="Nome" required>
+                        <input name="nome" class="form-control" type="text" id="InputName" placeholder="Nome" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="email" id="InputEmail" placeholder="exemplo@email.com" required>
+                        <input name="email" class="form-control" type="email" id="InputEmail" placeholder="exemplo@email.com" required>
                     </div>
                     <div class="form-group">
-                        <textarea  class="form-control" placeholder="Digite sua mensagem aqui" id="" cols="20" rows="3" required></textarea>
+                        <textarea name="mensagem"  class="form-control" placeholder="Digite sua mensagem aqui" id="" cols="20" rows="3" required></textarea>
                     </div>
                     <div class="submit">
-                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="submit" class="btn btn-primary" value="Enviar" name="submit">
                     </div>
                 </form>
             </div>
