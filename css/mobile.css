@@ -1,0 +1,24 @@
+@media (max-width: 576px){
+    .clima-imagem {
+        display: none;
+    }
+    
+    .img-fluid {
+        object-fit: contain;
+    }
+
+    .evaporativa {
+        display: flex;
+        align-items: center;
+    }
+
+    .climatizador-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #climatizador {
+        margin-top: 10px;
+    }
+}
