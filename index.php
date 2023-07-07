@@ -1,5 +1,5 @@
-<?php 
-    require_once('header.php') 
+<?php
+require_once('header.php')
 ?>
 
 <div class="container-fluid clima-imagem">
@@ -62,11 +62,37 @@
 <section class="container clientes-slider">
     <div class="center">
         <h2>Nossos clientes</h2>
-        <div style="max-width: 700px;margin: 0 auto;overflow: hidden;" class="slider-container">
-            <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
-            <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
-            <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
-            <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+        <div class="slider-container">
+            <ul class="slider">
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+                <li>
+                    <img src="img/LOGOTIPO_CCP-1024x485.png" alt="">
+                </li>
+            </ul>
+
         </div>
     </div>
 </section>
@@ -91,12 +117,10 @@
                     <input name="nome" class="form-control" type="text" id="InputName" placeholder="Nome" required>
                 </div>
                 <div class="form-group">
-                    <input name="email" class="form-control" type="email" id="InputEmail"
-                        placeholder="exemplo@email.com" required>
+                    <input name="email" class="form-control" type="email" id="InputEmail" placeholder="exemplo@email.com" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="mensagem" class="form-control" placeholder="Digite sua mensagem aqui" id=""
-                        cols="20" rows="3" required></textarea>
+                    <textarea name="mensagem" class="form-control" placeholder="Digite sua mensagem aqui" id="" cols="20" rows="3" required></textarea>
                 </div>
                 <div class="submit">
                     <input type="submit" class="btn btn-primary" value="Enviar" name="submit">
@@ -106,27 +130,21 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/slick.min.js"></script>
 <script>
-    $('section.clientes-slider .slider-container').slick({
-        dots: true,
+    $('.slider').slick({
+        dots: false,
         arrows: false,
         infinite: false,
         speed: 1000,
         slidesToShow: 4,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover: false,
+        pauseOnHover: true,
         responsive: [{
             breakpoint: 768,
             settings: {
